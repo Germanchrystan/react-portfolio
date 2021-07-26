@@ -14,7 +14,7 @@ function Contact() {
 				<textarea name="message" id="Message" required></textarea>
             <input type="hidden" name="_next" value="/thankyou"/>
             <input type="hidden" name="_subject" value="New Portfolio Message!"/>
-			<input class="Button ContactMe__Form--Submit" type="submit" value="SEND"/>
+			<input className="Button ContactMe__Form--Submit" type="submit" value="SEND"/>
 		</form>
 	</section>
     )

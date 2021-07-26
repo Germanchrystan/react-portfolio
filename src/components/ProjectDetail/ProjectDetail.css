@@ -1,0 +1,114 @@
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.project-background{
+    position: absolute;
+    background: url('./../../assets/Img/Large-Triangles.svg');
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+
+.project-detail{
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    height: fit-content;
+}
+
+.project-detail-container{
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+}
+
+.project-detail-container-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-name,
+.project-desc{
+    text-align: center;
+    margin: .5em 0;
+}
+
+.project-desc{
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.project-desc,
+.project-styled,
+.project-stack,
+.project-api,
+.project-deployed{
+    color: black;
+    
+}
+
+
+
+.project-stack,
+.project-styled,
+.project-api,
+.project-deployed{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.project-stack,
+.project-deployed{
+    width: 50%;
+
+}
+
+.project-api{
+    width: 50%;
+}
+
+.project-styled{
+    margin: 0 auto;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.detail-img{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.Button-Visit{
+    text-align: center;
+    margin: auto;
+    padding: .5em;
+    width: fit-content;
+}
+
+.Button-Visit a {
+    color: white;
+}
+
+.project-back{
+    position: absolute;
+    padding:.5rem;
+
+}
+
+.project-hr{
+    margin: 0.2rem auto;
+    width: 50%;
+    text-align: center;
+}

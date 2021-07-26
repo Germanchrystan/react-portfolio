@@ -27,28 +27,6 @@ function Skills() {
         {svg: 'DjangoSvg', name:'Django'},
     ]
 
-/*================================== ACCORDION SKILLS TOGGLE =======================================*/
-    const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header');
-
-    function toggleSkills(){
-        let itemClass = this.parentNode.className;
-
-        for(let i = 0; i < skillsContent.length; i++){
-            skillsContent[i].className = 'skills__content skills__close'
-        }
-
-        if(itemClass === "skills__content skills__close"){
-            this.parentNode.className = "skills__content skills__open"
-        }
-    }
-
-    skillsHeader.forEach((el) => {
-        el.addEventListener('click', toggleSkills)
-    })
-
-
-
     return (
         <section class="skills section" id="skills">
             <h1 class="section__title--separator">Skills</h1>

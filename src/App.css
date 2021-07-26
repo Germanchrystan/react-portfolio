@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;900&family=Poppins:wght@400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;900&display=swap');
+
+/*================================== ROOT =======================================*/
+:root{
+    --header-height:3rem;
+    /*=========== COLORS ==========*/
+    --dark-blue: #223843;
+    
+    --hue-color: 221; 
+    
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt:hsl(var(--hue-color), 57%, 53%);
+    --first-color-ligther:hsl(var(--hue-color), 92%, 85%);
+    --title-color:hsl(var(--hue-color), 8%, 15%);
+    --text-color:hsl(var(--hue-color), 8%, 45%);
+    --text-color-light:hsl(var(--hue-color), 8%, 65%);
+    --input-color:hsl(var(--hue-color), 70%, 96%);
+    --body-color:hsl(var(--hue-color), 60%, 99%);
+    --container-color:#FFF;
+    
+    
+    /*=========== FONTS ==========*/
+    /* --ff-s: 'Playfair Display', serif; */
+    --ff-s: 'Roboto Slab', serif;
+    --ff-ss: 'Poppins', sans-serif;;
+    
+    --fw-n:400;
+    --fw-sb: 500;
+    --fw-b:600;
+    --fw-eb:900;
+    
+    --letter-spacing: 10px;
+    
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    
+    
+    /*=========== MARGINS ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    
+    /*=========== Z-INDEX ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+    
+    /*=========== BOX-SHADOW ==========*/
+    --box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width: 968px){
+    :root{
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*================================== BASE =======================================*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html{
+    scroll-behavior: smooth;
 }
 
-.App-link {
-  color: #61dafb;
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--ff-ss);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,h2,h3,h4{
+    font-family: var(--ff-ss);
+    color: var(--title-color);
+    font-weight: var(--fw-b);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*============================= REUSABLE CSS CLASSES ==================================*/
+body{
+    background: var(--container-color);
+    color: var(--input-color);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+/*--------------- Typography ---------------*/
+h1,
+h2,
+h3{
+    line-height: 1;
+    margin: 0;
+}
+
+h1{ font-size: var(--h1-font-size);}
+h2{ font-size: var(--h2-font-size);}
+h3{ font-size: var(--h3-font-size);}
+
+.button{
+    display: inline-block;
+    width: auto;
+    margin-top: 1em;
+    margin-left: auto;
+    background: var(--dark-blue);
+    border: none;
+    color: white;
+    font-size:1rem;
+    letter-spacing:.15em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: var(--ff-ss);
+   
+    padding: .5em 1.5em;
+   
+}
+
+section{
+    padding: 2em 5em;
+}
+
+.section__title{
+    margin-bottom: .25em;
+
+}
+
+.section__title--intro{
+    font-weight: var(--fw-b);
+}
+
+.section__title--intro strong{
+    display: block;
+}
+
+strong{
+    font-weight: var(--fw-eb);
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--h3-font-size);
+    font-family: var(--ff-s);
+    font-weight: var(--fw-sb);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about{
+    background: var(--dark-blue);
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+.section__title--separator{
+    text-align: center;
 }

@@ -1,0 +1,95 @@
+/*============================= INTRODUCTION ==================================*/
+.intro-container{
+    height: 100vh;
+}
+
+.intro-background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url('./../../assets/Img/Large-Triangles.svg');
+    opacity: 0.7;
+}
+
+.section-centered{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hr{
+    height: 3px;
+    background: var(--dark-blue);
+}
+
+.intro{
+    position: relative;
+}
+
+.intro__img{
+    box-shadow: var(--box-shadow);
+}
+
+.section__subtitle--intro{
+    display: inline-block;
+}
+.home__social{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.home__social-icon{
+    font-size: 2rem;
+    color: white;
+    z-index: 100;
+}
+
+.home__social-icon:hover{
+    color: var(--first-color-alt); /*Give this color to the SVG at hover now*/
+}
+
+@media (min-width: 900px){
+    .section-centered{
+        align-items: center;
+    }
+
+    .intro{
+        display: grid;
+        width: min-content;
+        margin: auto auto;
+        column-gap: 1em;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section__subtitle--intro{
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+
+    .home__social{
+        display: grid;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 25vh 1rem;
+        grid-template-columns: max-content;
+        height: 60vh;        
+    }
+}

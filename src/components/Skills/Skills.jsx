@@ -31,25 +31,23 @@ function Skills() {
         <section class="skills section" id="skills">
             <h1 class="section__title--separator">Skills</h1>
             {/* <span class="section__subtitle">My technical level</span> */}
-            <div class="skills__container">
+            <div class="skills-container">
                
                 {/* <!------------------------ SKILLS 1------------------------> */}
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Programming <br />Languages</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
+                <div class="skills-content">
+                    <div class="skills-header">
+                            <h1 class="skills-category">Programming<br /> Languages</h1>
                     </div>
-                    <div class="skills__list grid">
+                    <div class="skills-list grid">
                         {
                             languages.map((i) => {
-                                return(
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
+                                return (
+                                    <div class="skills-data">
+                                        <div class="skills-svg">
                                             {svg[i.svg]()}
-                                            <h3 class="skills_name">{i.name}</h3>
+                                        </div>
+                                        <div class="skills-title">
+                                            <h3 class="skills-name">{i.name}</h3>
                                         </div>
                                     </div>
                                 )
@@ -58,22 +56,20 @@ function Skills() {
                     </div>
                 </div>
                 {/* <!------------------------ SKILLS 2------------------------>*/}
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Frontend<br /> Skills</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
+                <div class="skills-content">
+                    <div class="skills-header">
+                            <h1 class="skills-category">Frontend<br /> Skills</h1>
                     </div>
-                    <div class="skills__list grid">
+                    <div class="skills-list grid">
                         {
                             frontend.map((i) => {
                                 return (
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
+                                    <div class="skills-data">
+                                        <div class="skills-svg">
                                             {svg[i.svg]()}
-                                            <h3 class="skills_name">{i.name}</h3>
+                                        </div>
+                                        <div class="skills-title">
+                                            <h3 class="skills-name">{i.name}</h3>
                                         </div>
                                     </div>
                                 )
@@ -82,23 +78,21 @@ function Skills() {
                     </div>
                 </div>
                     {/* <!------------------------ SKILLS 3------------------------>*/}
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-server-network skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Backend<br /> Skills</h1>
-                                
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                    <div class="skills-content">
+                        <div class="skills-header">
+                            
+                                <h1 class="skills-category">Backend<br /> Skills</h1>
                         </div>
-                        <div class="skills__list grid">
+                        <div class="skills-list grid">
                         {
                             backend.map((i) => {
                                 return (
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
+                                    <div class="skills-data">
+                                        <div class="skills-svg">
                                             {svg[i.svg]()}
-                                            <h3 class="skills_name">{i.name}</h3>
+                                        </div>
+                                        <div class="skills__titles">
+                                            <h3 class="skills-name">{i.name}</h3>
                                         </div>
                                     </div>
                                 )

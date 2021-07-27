@@ -36,6 +36,7 @@ function ProjectDetail() {
                     <div className="project-detail-container-content">
                         <p className="project-desc">{project.desc}</p>
                         <hr className='project-hr'/>
+                        <div className='project-stack-styled'>
                         <ul className="project-stack">
                             <li><b>Stack: </b></li>
                             {
@@ -53,6 +54,7 @@ function ProjectDetail() {
                                 })
                             }
                         </ul>
+                        </div>
                         <ul className="project-deployed">
                             <li><b>Deployed using: </b></li>
                             {project?.deployed?.map((i) => {

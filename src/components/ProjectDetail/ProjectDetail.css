@@ -112,3 +112,47 @@
     width: 50%;
     text-align: center;
 }
+
+@media screen and (max-width:900px) {
+    .project-detail{
+        width: 90%;
+    }
+    .project-detail-container{
+        flex-direction: column;
+    }
+    .project-container{
+        height: 100%;
+        border: 2px solid green;
+    }
+    .project-background{
+        background-repeat: repeat;
+        
+    }
+
+    .project-detail-container-content{
+        width: 100%;
+    }
+
+    .project-deployed,
+    .project-api{
+        width: 90%;
+    }
+    .project-stack-styled{
+        display: none;
+    }
+    .project-detail{
+        height: 100vh;
+    }
+    .Button-Visit{
+        text-align: center;
+        margin: auto;
+        padding: .2em;
+        font-size: 2em;
+        width: fit-content;
+    }
+
+    .project-back{
+        position: absolute;
+        padding:.2rem;
+    }
+}

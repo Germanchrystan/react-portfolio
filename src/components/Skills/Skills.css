@@ -1,51 +1,88 @@
+.skills-section{
+    background: linear-gradient(47deg, rgba(255,107,53,1) 0%, rgba(64,121,140,1) 91%);
+}
+
 .skills-container{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 80vh;
 }
-
-
 .skills-content{
+    color: #efefd0ff;
     display: flex;
-    width: 100%;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-.skills-header{
-    width: 20em;
-    margin-right: .5em;
-    background: var(--dark-blue);
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.skills-category{
-    color: white;
-    font-size: 2em;
-}
-.skills-list{
+    border-radius: 15px;
+    padding: .5em;
     background: rgba(130,130,130,0.5);
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
-    display: flex;
-    width: fit-content;
-    color: black;
-    justify-content: flex-start;
-    border-radius: 15px;
-    padding: .5em
+    width: 15em;
+    height: 70%;
 }
-
-.skills-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    width: 10em;
+.skills-header{
+    width: 20em;
+    color: #efefd0ff;
+    margin-right: .5em;
+    padding: 1em;
     text-align: center;
 }
-
+.skills-category{
+    color: #efefd0ff;
+    font-size: 1.4em;
+}
+.skills-main-title{
+    margin: 2em auto;
+    color: #efefd0ff;
+}
+.skills-list{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    color: #efefd0ff;
+    justify-content: flex-start;
+}
+.skills-data {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
 .skills-svg{
     width: fit-content;
-    margin: 0 auto;
+    margin: 1em auto;
+}
+.skills-name{
+    font-family: var(--ff-s);
+    font-size: var(--normal-font-size);
+    color: #efefd0ff;
+    font-weight: var( --fw-n);
+}
+.skills1,
+.skills2,
+.skills3{
+    background: rgba(0,0,0,0.2);
+}
+
+
+
+@media (max-width: 900px){
+    .skills-section{
+        height: 200vh;
+    }
+    .skills-container{
+        flex-direction: column;
+        justify-content: space-around;
+        
+        height: 90%;
+    }
+    .skills-content{
+        margin: 0 auto;
+        height: 25em;
+
+    }
+    .skills-container{
+        flex-direction: column;
+    }
 }

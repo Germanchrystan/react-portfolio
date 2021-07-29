@@ -1,22 +1,5 @@
 const Projects = [
     {
-        id:7,
-        name:'Parking App',
-        img:'ParkingAppImg',
-        desc:'This is my first project made with Python and Django. It was made as a submission for the Lowest Rated Parking Lots Challenge by AirGarage. It basically displays the lowest rated parking lots in an area entered in the search bar. The score is determined by the bayesian average between the rating and the review count. This was made during a 5 day period, in which I learned about Django and incorporated that skill to what I already knew about Python, learned about how to incorporate React and Redux to a Django app using Webpack, and then made the app using Django to get the api requests and send them to the frontend. The styling is very basic and was made with Bootstrap in order to save time. Working on a project like this in such a short time was a great practice though, and I plan to make more projects with Django in the future.',
-        api:['Yelp Api'],
-        stack:[
-            {svg:'PythonSvg', name:'Python'},
-            {svg:'DjangoSvg', name:'Django'},
-            {svg:'ReduxSvg',name:'Redux'},
-            {svg:'ReactJsSvg', name:'ReactJs'},
-            {svg:'JsSvg', name:'JavaScript'},
-        ],
-        styled: [{svg:'BootstrapSvg',name:'Bootstrap'}],
-        deployed: [{svg:'HerokuSvg', name:'Heroku'}],
-        link:'https://parking-app-dj.herokuapp.com/'
-    },
-    {
         id:6,
         name:'Adalov Clothes',
         img:'AdalovImg',
@@ -33,6 +16,23 @@ const Projects = [
         styled:[{svg:'TailwindSvg', name:'TailwindCSS'}],
         deployed: [{svg:'HerokuSvg', name:'Heroku'}, {svg:'VercelSvg', name:'Vercel'}],
         link:'https://adalov-front.vercel.app/'
+    },
+    {
+        id:7,
+        name:'Parking App',
+        img:'ParkingAppImg',
+        desc:'This is my first project made with Python and Django. It was made as a submission for the Lowest Rated Parking Lots Challenge by AirGarage. It basically displays the lowest rated parking lots in an area entered in the search bar. The score is determined by the bayesian average between the rating and the review count. This was made during a 5 day period, in which I learned about Django and incorporated that skill to what I already knew about Python, learned about how to incorporate React and Redux to a Django app using Webpack, and then made the app using Django to get the api requests and send them to the frontend. The styling is very basic and was made with Bootstrap in order to save time. Working on a project like this in such a short time was a great practice though, and I plan to make more projects with Django in the future.',
+        api:['Yelp Api'],
+        stack:[
+            {svg:'PythonSvg', name:'Python'},
+            {svg:'DjangoSvg', name:'Django'},
+            {svg:'ReduxSvg',name:'Redux'},
+            {svg:'ReactJsSvg', name:'ReactJs'},
+            {svg:'JsSvg', name:'JavaScript'},
+        ],
+        styled: [{svg:'BootstrapSvg',name:'Bootstrap'}],
+        deployed: [{svg:'HerokuSvg', name:'Heroku'}],
+        link:'https://parking-app-dj.herokuapp.com/'
     },
     {
         id:5,
@@ -97,18 +97,18 @@ const Projects = [
         link:'https://germanchrystan.github.io/loop-studios/'
     },
 ]
-const oslo = {
-    id:1,
-    name:'Oslo Café',
-    img:'',
-    desc:'',
-    stack:[
-        {svg:'HtmlSvg',name:'HTML'},
-        {svg:'JsSvg',name:'JavaScript'},
-    ],
-    styled:[{svg:'LessSvg', name:'Less'}],
-    api:null,
-    deployed:[{svg:'GithubSvg', name:'GitHub Pages'}],
-}
+// const oslo = {
+//     id:1,
+//     name:'Oslo Café',
+//     img:'',
+//     desc:'',
+//     stack:[
+//         {svg:'HtmlSvg',name:'HTML'},
+//         {svg:'JsSvg',name:'JavaScript'},
+//     ],
+//     styled:[{svg:'LessSvg', name:'Less'}],
+//     api:null,
+//     deployed:[{svg:'GithubSvg', name:'GitHub Pages'}],
+// }
 
 export default Projects;

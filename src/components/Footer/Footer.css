@@ -1,9 +1,8 @@
-footer{
-    background: var(--dark-blue);
-    padding: 5em 0;
+.Footer{
+    background: #004e89ff;
+    padding: 2em 0;
     text-align: center;
 }
-
 .SocialIcons{
     width: 90%;
     margin: 0 auto;
@@ -11,25 +10,21 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:  1.75em auto 4em;
+    margin:  1.75em auto 2em;
 }
-
 .SocialIcon{
     width: 4em;
     height: 4em;
 }
-
 .SocialIcon--LinkedIn{
     width: 4.7em;
     height: 4.7em;
 }
-
 .Copyright{
         content: '';
         display: block;
         height: 1px;
         background: rgba(white, .15);
-        margin: 2em auto;
+        margin: 1em auto;
         width: 25%;
-
 }

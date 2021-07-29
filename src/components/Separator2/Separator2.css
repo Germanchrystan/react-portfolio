@@ -1,0 +1,30 @@
+.separator2{
+    height: 90vh;
+    display: flex;
+
+}
+.separator2-section1{
+    width: 50%;
+    background: #1a659eff;
+}
+.separator2-section2{
+    width: 50%;
+    background:#ff6b35ff;
+}
+.separator2-section1-content,
+.separator2-section2-content{
+    height: 80%;
+    width: 90%;
+    margin:2em auto;
+}
+.separator2-section1-content h1 {
+    /* color:#ff6b35ff; */
+    color: white;
+    text-align: center;
+}
+
+.separator2-section2-content h1{
+    /* color: #1a659eff; */
+    color: white;
+    text-align: center;
+}

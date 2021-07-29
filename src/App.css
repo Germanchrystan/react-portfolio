@@ -5,7 +5,37 @@
 :root{
     --header-height:3rem;
     /*=========== COLORS ==========*/
-    --dark-blue: #223843;
+    /* --dark-blue: #223843;  */
+    /* --dark-blue: #5585ED; */
+    /* --dark-blue: #5A8AF2; */
+    /* --dark-blue: #163780; */
+    /* --dark-blue: rgba(22,55,128, 0.9); */
+
+    /*
+    PALETTE 1
+    --orange-crayola: #ff6b35ff;
+    --peach-crayola: #f7c59fff;
+    --beige: #efefd0ff;
+    --usafa-blue: #004e89ff;
+    --sapphire-blue: #1a659eff;
+    background: linear-gradient(47deg, rgba(239,239,208,1) 3%, rgba(247,197,159,1) 22%, rgba(255,107,48,1) 53%);
+    background: linear-gradient(47deg, rgba(26,101,144,1) 33%, rgba(0,78,137,1) 66%);
+
+    PALETTE 2
+    --charleston-green: #0b2027ff;
+    --teal-blue: #40798cff;
+    --green-sheen: #70a9a1ff;
+    --ash-gray: #cfd7c7ff;
+    --beige: #f6f1d1ff;
+
+
+
+
+    */
+
+    --original-bg-blue: #0c59ff;
+    --dark-blue: rgb(11,52,118);
+    --dark-blue: #0c59ff;
     
     --hue-color: 221; 
     

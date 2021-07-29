@@ -8,8 +8,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div>
-           	<footer>
+           	<footer class="Footer">
                 <p>Follow me on social media</p>
                 <div class="SocialIcons">
                     <a href="#" rel="noreferrer" >
@@ -25,7 +24,6 @@ function Footer() {
                 </div>
                 <p class="Copyright">Germán Chrystan - 2021</p>
             </footer> 
-        </div>
     )
 }
 

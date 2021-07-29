@@ -2,9 +2,26 @@ import React from 'react'
 import './Separator.css'
 import welcome1 from './../../assets/Img/welcome-01.png';
 import welcome2 from './../../assets/Img/welcome-02.png';
+import fileSaver from 'file-saver';
 
+import en from './../../assets/Cvs/Germán-Chrystan-CV-En.pdf'
+import es from './../../assets/Cvs/Germán-Chrystan-CV-Es.pdf';
 
 function Separator() {
+
+    const handleEnCv = () => {
+        fileSaver.saveAs(
+            en,
+            "Germán-Chrystan-CV-En.pdf"
+          );
+    }
+    const handleEsCv = () => {
+        fileSaver.saveAs(
+            es,
+            "Germán-Chrystan-CV-Es.pdf"
+          );
+    }
+
     return (
         <section className="secondIntro">
             <div className="secondIntro__Left">
@@ -17,13 +34,15 @@ function Separator() {
                 </h2>
                 <div className="cv">
                     
-                    <div className="cv-en">
-
-                        English
-                    </div>
-                    <div className="cv-es">
-                        Español
-                    </div>
+                        <div onClick={handleEnCv} className="cv-en">
+                            English
+                        </div>
+                    
+                    
+                        <div onClick={handleEsCv} className="cv-es">
+                            Español
+                        </div>
+                    
                 </div>
             </div>
             <div className="secondIntro__Right">

@@ -59,6 +59,7 @@
 
 .cv-en,
 .cv-es{
+    cursor:pointer;
     text-align: center;
     display: inline-block;
     width: 80%;

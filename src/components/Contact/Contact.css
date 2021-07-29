@@ -66,5 +66,6 @@ input, textarea {
     line-height: 1;
     font-family: var(--ff-ss);
     padding: .5em 1.5em;
+    cursor: pointer;
    
 }

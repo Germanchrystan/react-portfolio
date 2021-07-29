@@ -1,5 +1,6 @@
 import React from 'react'
 import './ThankYou.css';
+import {Link} from 'react-router-dom';
 
 function ThankYou() {
     return (
@@ -8,7 +9,7 @@ function ThankYou() {
             <div class="thankyou-message-container">
                 <h1>Thank you for your message</h1>
                 <p>I`ll get in touch as soon as I can</p>
-                <a href="https://germanchrystan.github.io/myProfile/">Go back to the main page</a>
+                <Link to="/">Go back to the main page</Link>
             </div>
         </div>
     )

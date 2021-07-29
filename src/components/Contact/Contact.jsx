@@ -14,7 +14,7 @@ function Contact() {
 					<input type="email" name="email" id="E-mail" required/>
 				<label className="Message" for="Message">Message:</label>
 					<textarea name="message" id="Message" required></textarea>
-				<input type="hidden" name="_next" value="/thankyou"/>
+				<input type="hidden" name="_next" value="https://german-chrystan.vercel.app/thankyou"/>
 				<input type="hidden" name="_subject" value="New Portfolio Message!"/>
 				<input className="Button ContactMe__Form--Submit" type="submit" value="SEND"/>
 			</form>

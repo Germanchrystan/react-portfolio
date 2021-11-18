@@ -24,7 +24,7 @@ function Skills() {
         {svg: 'NodeSvg',    name:'NodeJs'},
         {svg: 'MongoSvg',   name:'MongoDb'},
         {svg: 'PostgresqlSvg', name:'PostgresQL'},
-        {svg: 'DjangoSvg', name:'Django'},
+        {svg: 'SpringbootSvg', name:'Spring Boot'},
     ]
 
     return (

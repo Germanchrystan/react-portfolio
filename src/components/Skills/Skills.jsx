@@ -7,7 +7,8 @@ function Skills() {
     const languages = [
         {svg:'JsSvg', name:'JavaScript'},
         {svg:'TsSvg', name: 'TypeScript'},
-        {svg:'PythonSvg', name:'Python'}
+        // {svg:'PythonSvg', name:'Python'},
+        {svg: 'JavaSvg', name: 'Java'}
     ]
 
     const frontend = [
